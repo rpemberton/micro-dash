@@ -12,3 +12,19 @@ export function isValidMeterData(data) {
   }
   return true;
 }
+
+export function formatCurency(unit, value) {
+  return new Intl.NumberFormat('en-GB', {
+    style: 'currency',
+    currency: unit,
+    maximumSignificantDigits: 2
+  }).format(value);
+}
+
+export function getRotateDeg(min, max, value) {
+  const range = max - min;
+  const valuePercOfRange = ((value - min) / range) * 100;
+  const rotateDeg = Math.ceil(180 * (valuePercOfRange / 100));
+
+  return rotateDeg;
+}

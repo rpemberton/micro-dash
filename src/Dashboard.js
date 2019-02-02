@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Widget from './Widget';
+import Meter from './Meter';
 
 import { isValidMeterData } from './utils';
 
@@ -16,7 +17,10 @@ class Dashboard extends Component {
           throw new Error('Bad data');
         }
 
-        this.setState({ meter: res });
+        // delay to show loading state
+        setTimeout(() => {
+          this.setState({ meter: res });
+        }, 500);
       })
       .catch(err => {
         console.error(err);
@@ -38,7 +42,7 @@ class Dashboard extends Component {
     return (
       <div className="Dashboard">
         <Widget>
-          Widget
+          <Meter data={this.state.meter} />
         </Widget>
       </div>
     );
