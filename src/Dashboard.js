@@ -11,6 +11,10 @@ class Dashboard extends Component {
   };
 
   componentDidMount() {
+    this.init();
+  }
+
+  init() {
     this.getMeterData()
       .then(res => {
         if (!isValidMeterData(res)) {
