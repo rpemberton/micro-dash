@@ -1,5 +1,7 @@
 # Micro dash
 
+Demo: https://rpemberton.github.io/micro-dash
+
 * Supports multiple currencies
 * Uses CSS animations
 * Easy to add more Widgets
