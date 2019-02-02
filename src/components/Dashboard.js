@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Widget from './Widget';
 import Meter from './Meter';
 
-import { isValidMeterData } from './utils';
+import { isValidMeterData } from '../utils';
 
 class Dashboard extends Component {
   state = {

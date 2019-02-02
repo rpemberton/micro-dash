@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { formatCurency, getRotateDeg } from './utils';
+import { formatCurency, getRotateDeg } from '../utils';
 
 function Meter(props) {
   const {
