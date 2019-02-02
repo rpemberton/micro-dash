@@ -1,4 +1,4 @@
-# Micro dashboard
+# Micro dash
 
 * Supports multiple currencies
 * Uses CSS animations
