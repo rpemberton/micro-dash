@@ -4,9 +4,17 @@ import PropTypes from 'prop-types';
 import { formatCurency, getRotateDeg } from './utils';
 
 function Meter(props) {
-  const isLoading = !props.data;
-  const { value = 0, max = 1, min = 0, format, unit, error } = props.data || {};
-  const hideValues = isLoading || error;
+  const {
+    value = 0,
+    max = 1,
+    min = 0,
+    format,
+    unit,
+    error,
+    isLoading
+  } = props.data || {};
+
+  const hasData = typeof props.data.value === 'number';
   const rotateDeg = getRotateDeg(min, max, value);
   let meterText = isLoading ? 'Loading...' : 'css-o-meter';
 
@@ -24,7 +32,7 @@ function Meter(props) {
     <div className="Meter">
       <div
         className="Meter__val"
-        style={{ visibility: hideValues ? "hidden" : "visible" }}
+        style={{ visibility: hasData ? "visible" : "hidden" }}
       >
         {meterValue}
       </div>
@@ -45,13 +53,13 @@ function Meter(props) {
 
         <div
           className="Meter__min"
-          style={{ visibility: hideValues ? "hidden" : "visible" }}
+          style={{ visibility: hasData ? "visible" : "hidden" }}
         >
           {min}
         </div>
         <div
           className="Meter__max"
-          style={{ visibility: hideValues ? "hidden" : "visible" }}
+          style={{ visibility: hasData ? "visible" : "hidden" }}
         >
           {max}
         </div>
@@ -66,7 +74,9 @@ Meter.propTypes = {
   data: PropTypes.shape({
     min: PropTypes.number,
     max: PropTypes.number,
-    value: PropTypes.number
+    value: PropTypes.number,
+    isLoading: PropTypes.bool,
+    error: PropTypes.bool
   })
 };
 

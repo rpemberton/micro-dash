@@ -7,7 +7,10 @@ import { isValidMeterData } from './utils';
 
 class Dashboard extends Component {
   state = {
-    meter: null
+    meterData: {
+      isLoading: true,
+      error: false,
+    }
   };
 
   componentDidMount() {
@@ -21,14 +24,21 @@ class Dashboard extends Component {
           throw new Error('Bad data');
         }
 
+        const newMeterData = Object.assign(this.state.meterData, res);
+        newMeterData.isLoading = false;
+
         // delay to show loading state
         setTimeout(() => {
-          this.setState({ meter: res });
+          this.setState({ meterData: newMeterData });
         }, 500);
       })
       .catch(err => {
+        this.setState({
+          meterData: { error: true } ,
+          isLoading: false,
+        });
+
         console.error(err);
-        this.setState({ meter: { error: true } });
       });
   }
 
@@ -46,7 +56,7 @@ class Dashboard extends Component {
     return (
       <div className="Dashboard">
         <Widget>
-          <Meter data={this.state.meter} />
+          <Meter data={this.state.meterData} />
         </Widget>
       </div>
     );

@@ -8,7 +8,9 @@ describe('<Meter />', () => {
     min: 0,
     max: 200,
     format: 'currency',
-    unit: 'GBP'
+    unit: 'GBP',
+    isLoading: false,
+    error: false
   };
 
   it('renders the correct value', () => {
@@ -19,7 +21,7 @@ describe('<Meter />', () => {
   });
 
   it('displays a loading sign', () => {
-    const wrapper = shallow(<Meter data={null} />);
+    const wrapper = shallow(<Meter data={{ isLoading: true }} />);
     expect(wrapper.containsMatchingElement(<p>Loading...</p>)).toBeTruthy();
   });
 
