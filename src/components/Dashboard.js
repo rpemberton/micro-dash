@@ -52,11 +52,21 @@ class Dashboard extends Component {
       });
   }
 
+  getNewMeterData= () => {
+    const meterData = Object.assign({}, this.state.meterData);
+    meterData.isLoading = true;
+    meterData.error = false;
+
+    this.setState({ meterData });
+
+    this.init();
+  }
+
   render() {
     return (
       <div className="Dashboard">
         <Widget>
-          <Meter data={this.state.meterData} />
+          <Meter data={this.state.meterData} getNewData={this.getNewMeterData} />
         </Widget>
       </div>
     );

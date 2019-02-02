@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import { formatCurency, getRotateDeg } from '../utils';
 
+import refresh from '../assets/refresh-arrow.svg';
+
 function Meter(props) {
   const {
     value = 0,
@@ -30,6 +32,13 @@ function Meter(props) {
 
   return (
     <div className="Meter">
+      <button
+        className="Meter__get-data-btn"
+        onClick={props.getNewData}
+        disabled={isLoading}>
+        <img src={refresh} alt="Refresh" />
+      </button>
+
       <div
         className="Meter__val"
         style={{ visibility: hasData ? "visible" : "hidden" }}
