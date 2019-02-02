@@ -9,25 +9,25 @@
 
 ## Notable components
 
-#### Dashboard
+### Dashboard
 This is responsible for the main theme, layout of Widgets, and fetching data.
 
-#### Widget
+### Widget
 This component wraps up a chart or some other component/element and makes it compatible with the Dasboard.
 
-#### Meter
+### Meter
 This takes some data as props and renders a dashboard style meter.
 
 
 ## States
 
-####Loading
+### Success
 ![screenshot-usd](docs/screenshot-usd.png)
 
-####Loading
+### Loading
 ![screenshot-loading](docs/screenshot-loading.png)
 
-####Loading
+### Error
 ![screenshot-error](docs/screenshot-error.png)
 
 
