@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Widget from './Widget';
+
 import { isValidMeterData } from './utils';
 
 class Dashboard extends Component {
@@ -35,7 +37,9 @@ class Dashboard extends Component {
   render() {
     return (
       <div className="Dashboard">
-        Dashboard
+        <Widget>
+          Widget
+        </Widget>
       </div>
     );
   }
