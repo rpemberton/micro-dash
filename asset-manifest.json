@@ -1,13 +1,14 @@
 {
-  "main.css": "/micro-dash/static/css/main.e61e072d.chunk.css",
-  "main.js": "/micro-dash/static/js/main.b4d67feb.chunk.js",
-  "main.js.map": "/micro-dash/static/js/main.b4d67feb.chunk.js.map",
-  "static/js/1.f739feb7.chunk.js": "/micro-dash/static/js/1.f739feb7.chunk.js",
-  "static/js/1.f739feb7.chunk.js.map": "/micro-dash/static/js/1.f739feb7.chunk.js.map",
+  "main.css": "/micro-dash/static/css/main.9be06645.chunk.css",
+  "main.js": "/micro-dash/static/js/main.024984e4.chunk.js",
+  "main.js.map": "/micro-dash/static/js/main.024984e4.chunk.js.map",
+  "static/js/1.f03e8ae8.chunk.js": "/micro-dash/static/js/1.f03e8ae8.chunk.js",
+  "static/js/1.f03e8ae8.chunk.js.map": "/micro-dash/static/js/1.f03e8ae8.chunk.js.map",
   "runtime~main.js": "/micro-dash/static/js/runtime~main.0180c39d.js",
   "runtime~main.js.map": "/micro-dash/static/js/runtime~main.0180c39d.js.map",
-  "static/css/main.e61e072d.chunk.css.map": "/micro-dash/static/css/main.e61e072d.chunk.css.map",
+  "static/media/refresh-arrow.svg": "/micro-dash/static/media/refresh-arrow.23d40b88.svg",
+  "static/css/main.9be06645.chunk.css.map": "/micro-dash/static/css/main.9be06645.chunk.css.map",
   "index.html": "/micro-dash/index.html",
-  "precache-manifest.ea388867a7bc5b4d684ae3df59866020.js": "/micro-dash/precache-manifest.ea388867a7bc5b4d684ae3df59866020.js",
+  "precache-manifest.710e2b7f46d9c3ef76fe6dd4e367db48.js": "/micro-dash/precache-manifest.710e2b7f46d9c3ef76fe6dd4e367db48.js",
   "service-worker.js": "/micro-dash/service-worker.js"
 }
