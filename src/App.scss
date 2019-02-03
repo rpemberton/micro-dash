@@ -5,17 +5,23 @@ $color-dark: #222;
 $color-medium: #272727;
 $color-light: #444;
 
-$meter-height: 200px;
-$meter-width: $meter-height * 2;
 
-// $arc-rotate: 60deg;
-$arc-transition: transform 800ms;
+/*
+App.js
+==============================
+*/
 
 .App {
   padding: 20px;
   font-weight: bold;
   color: white;
 }
+
+
+/*
+Dashboard.js
+==============================
+*/
 
 .Dashboard {
   display: flex;
@@ -24,6 +30,12 @@ $arc-transition: transform 800ms;
 
   min-width: 700px;
 }
+
+
+/*
+Widget.js
+==============================
+*/
 
 .Widget {
   flex-shrink: 0;
@@ -35,6 +47,17 @@ $arc-transition: transform 800ms;
   background: $color-medium;
   border-radius: 10px;
 }
+
+
+/*
+Meter.js
+==============================
+*/
+
+$meter-height: 200px;
+$meter-width: $meter-height * 2;
+// $arc-rotate: 60deg;
+$arc-transition: transform 800ms;
 
 .Meter {
   position: relative;
