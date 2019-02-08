@@ -34,8 +34,7 @@ class Dashboard extends Component {
       })
       .catch(err => {
         this.setState({
-          meterData: { error: true } ,
-          isLoading: false,
+          meterData: { error: true, isLoading: false } ,
         });
 
         console.error(err);
