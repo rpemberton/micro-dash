@@ -1,14 +1,14 @@
 {
-  "main.css": "/micro-dash/static/css/main.9be06645.chunk.css",
-  "main.js": "/micro-dash/static/js/main.024984e4.chunk.js",
-  "main.js.map": "/micro-dash/static/js/main.024984e4.chunk.js.map",
+  "main.css": "/micro-dash/static/css/main.e8bca759.chunk.css",
+  "main.js": "/micro-dash/static/js/main.948b40a5.chunk.js",
+  "main.js.map": "/micro-dash/static/js/main.948b40a5.chunk.js.map",
   "static/js/1.f03e8ae8.chunk.js": "/micro-dash/static/js/1.f03e8ae8.chunk.js",
   "static/js/1.f03e8ae8.chunk.js.map": "/micro-dash/static/js/1.f03e8ae8.chunk.js.map",
   "runtime~main.js": "/micro-dash/static/js/runtime~main.0180c39d.js",
   "runtime~main.js.map": "/micro-dash/static/js/runtime~main.0180c39d.js.map",
   "static/media/refresh-arrow.svg": "/micro-dash/static/media/refresh-arrow.23d40b88.svg",
-  "static/css/main.9be06645.chunk.css.map": "/micro-dash/static/css/main.9be06645.chunk.css.map",
+  "static/css/main.e8bca759.chunk.css.map": "/micro-dash/static/css/main.e8bca759.chunk.css.map",
   "index.html": "/micro-dash/index.html",
-  "precache-manifest.710e2b7f46d9c3ef76fe6dd4e367db48.js": "/micro-dash/precache-manifest.710e2b7f46d9c3ef76fe6dd4e367db48.js",
+  "precache-manifest.2d2abd318f4b52cfe7655c1fbf10d653.js": "/micro-dash/precache-manifest.2d2abd318f4b52cfe7655c1fbf10d653.js",
   "service-worker.js": "/micro-dash/service-worker.js"
 }

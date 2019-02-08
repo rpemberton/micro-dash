@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/micro-dash/static/js/runtime~main.0180c39d.js"
   },
   {
-    "revision": "024984e4b296be6d0c46",
-    "url": "/micro-dash/static/js/main.024984e4.chunk.js"
+    "revision": "948b40a5ec770d99b68a",
+    "url": "/micro-dash/static/js/main.948b40a5.chunk.js"
   },
   {
     "revision": "f03e8ae863144a61c620",
     "url": "/micro-dash/static/js/1.f03e8ae8.chunk.js"
   },
   {
-    "revision": "024984e4b296be6d0c46",
-    "url": "/micro-dash/static/css/main.9be06645.chunk.css"
+    "revision": "948b40a5ec770d99b68a",
+    "url": "/micro-dash/static/css/main.e8bca759.chunk.css"
   },
   {
-    "revision": "aa5e2daccdcad55faf27819690bcf221",
+    "revision": "fb96bfcc13c0197d4297f50addfdc4ff",
     "url": "/micro-dash/index.html"
   }
 ];
