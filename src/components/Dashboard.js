@@ -24,7 +24,7 @@ class Dashboard extends Component {
           throw new Error('Bad data');
         }
 
-        const newMeterData = Object.assign(this.state.meterData, res);
+        const newMeterData = Object.assign({}, this.state.meterData, res);
         newMeterData.isLoading = false;
 
         // delay to show loading state
