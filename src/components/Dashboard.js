@@ -51,7 +51,7 @@ class Dashboard extends Component {
       });
   }
 
-  getNewMeterData= () => {
+  getNewMeterData = () => {
     const meterData = Object.assign({}, this.state.meterData);
     meterData.isLoading = true;
     meterData.error = false;
