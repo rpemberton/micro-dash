@@ -6,12 +6,24 @@ import Meter from './Meter';
 import { isValidMeterData } from '../utils';
 
 class Dashboard extends Component {
-  state = {
-    meterData: {
-      isLoading: true,
-      error: false,
-    }
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      meterData: {
+        isLoading: true,
+        error: false
+      }
+    };
+
+    this.fallbackData = {
+      value: 34,
+      min: 0,
+      max: 200,
+      format: 'currency',
+      unit: 'GBP'
+    };
+  }
 
   componentDidMount() {
     this.init();
@@ -33,11 +45,26 @@ class Dashboard extends Component {
         }, 500);
       })
       .catch(err => {
-        this.setState({
-          meterData: { error: true, isLoading: false } ,
-        });
-
         console.error(err);
+
+        const meterData = this.state.meterData;
+
+        // Don't show error on first request
+        // Reduce frequency of server/data errors
+        if (this.state.meterData.value === undefined || Math.random() < 0.95) {
+          const newMeterData = Object.assign({}, meterData, this.fallbackData);
+          newMeterData.isLoading = false;
+
+          this.setState({
+            meterData: newMeterData
+          });
+
+          return;
+        }
+
+        this.setState({
+          meterData: { error: true, isLoading: false }
+        });
       });
   }
 
