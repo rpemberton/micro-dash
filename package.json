@@ -2,7 +2,7 @@
   "name": "micro-dash",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://rpemberton.github.io/micro-dash",
+  "homepage": "https://rpemberton.github.io/micro-dash",
   "dependencies": {
     "node-sass": "^4.11.0",
     "react": "^16.7.0",

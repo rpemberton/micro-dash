@@ -39,10 +39,7 @@ class Dashboard extends Component {
         const newMeterData = Object.assign({}, this.state.meterData, res);
         newMeterData.isLoading = false;
 
-        // delay to show loading state
-        setTimeout(() => {
-          this.setState({ meterData: newMeterData });
-        }, 500);
+        this.setState({ meterData: newMeterData });
       })
       .catch(err => {
         console.error(err);
@@ -70,6 +67,7 @@ class Dashboard extends Component {
 
   getMeterData() {
     return fetch('https://widgister.herokuapp.com/challenge/frontend')
+      .then(res => new Promise(resolve => setTimeout(() => resolve(res), 500))) // Delay to show loading state
       .then(res => {
         if (!res.ok) {
           throw new Error(res.statusText);
